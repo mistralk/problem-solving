@@ -1,4 +1,5 @@
-// http://www.deqnotes.net/acmicpc/
+// deqnotes
+// http://www.deqnotes.net/acmicpc/p0003/ja
 
 #include <iostream>
 #include <string>

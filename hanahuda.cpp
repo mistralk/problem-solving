@@ -1,4 +1,5 @@
-// http://www.deqnotes.net/acmicpc/
+// deqnotes
+// http://www.deqnotes.net/acmicpc/1978/ja
 
 #include <iostream>
 #include <vector>
