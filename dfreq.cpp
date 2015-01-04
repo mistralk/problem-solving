@@ -8,7 +8,6 @@ int main()
 {
 	int n, m, cnt = 0, z = 1, prev = 0;
 	cin >> n >> m;
-	const int origin_n = n;
 
 	while (n)
 	{
@@ -21,7 +20,7 @@ int main()
 		}
 		else if (digit == m)
 		{
-			if (n == origin_n && m == 0)
+			if (z == 1 && m == 0)
 				cnt += n / 10;
 			else if (m == 0)
 				cnt += (n / 10 - 1) * z + prev + 1;
