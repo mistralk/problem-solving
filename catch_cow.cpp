@@ -10,16 +10,16 @@ queue < int > path;
 
 void visit(int to, int from)
 {
-		if (!isVisited[to])
-		{
-			path.push(to);
+	if (!isVisited[to])
+	{
+		path.push(to);
+		isVisited[to] = isVisited[from] + 1;
+	}
+	else
+	{
+		if (isVisited[to] > isVisited[from] + 1)
 			isVisited[to] = isVisited[from] + 1;
-		}
-		else
-		{
-			if (isVisited[to] > isVisited[from] + 1)
-				isVisited[to] = isVisited[from] + 1;
-		}
+	}
 }
 
 int main()
@@ -28,10 +28,9 @@ int main()
 	cin >> n >> k;
 
 	path.push(n);
-	while (1)
+	while (n != k)
 	{
 		n = path.front();
-		if (n == k) break;
 		path.pop();
 
 		if (n - 1 >= 0)
